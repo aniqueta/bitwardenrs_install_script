@@ -52,10 +52,6 @@ fi
 
 echo "Running Script"
 
-#Configure GIT
-sudo git config --global user.email "${email}"
-sudo git config --global user.name "${name}"
-
 #install dependencies
 sudo apt update && apt list -u && sudo apt dist-upgrade -y
 sudo apt install dirmngr git libssl-dev pkg-config build-essential curl wget git apt-transport-https ca-certificates curl software-properties-common pwgen nginx-full letsencrypt -y
